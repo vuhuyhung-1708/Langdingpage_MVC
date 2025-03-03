@@ -1,0 +1,30 @@
+.btn-showcase {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  
+  .btn-custom, .btn-contact, .btn-send {
+    background: $secondary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .btn-buy {
+    background-color: orange;
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+  

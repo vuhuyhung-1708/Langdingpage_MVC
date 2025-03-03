@@ -1,0 +1,34 @@
+﻿@{ 
+    Layout = null;
+}
+
+
+@model IEnumerable<website_test.Models.UserMessage>
+
+@{
+    ViewBag.Title = "User Messages";
+}
+
+<h2>Danh sách tin nhắn</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td>@message.Id</td>
+                <td>@message.Name</td>
+                <td>@message.Email</td>
+                <td>@message.Message</td>
+            </tr>
+        }
+    </tbody>
+</table>

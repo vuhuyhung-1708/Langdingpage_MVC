@@ -1,0 +1,99 @@
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: url('/assets/img/background-1.png') left center / cover no-repeat;
+  padding-top: 60px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+nav ul {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  list-style: none;
+  justify-content: left;
+  padding: 20px;
+  background-color: #00000059;
+  width: 100%;
+  gap: 20px; /* Tạo khoảng cách giữa các mục */
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: none; /* Đảm bảo không có border mặc định */
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #32cd32;
+  border-bottom: 2px solid #32cd32; /* Chỉ áp dụng gạch chân khi active hoặc hover */
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.content-home {
+  max-width: 500px;
+  color: white;
+  padding-left: 50px;
+  margin-left: 20px;
+}
+
+.content-home h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.content-home p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.btn-showcase {
+  background-color: #32cd32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-showcase:hover {
+  background-color: #28a428;
+}
+
+.header-image {
+  flex: 1;
+  height: 80%;
+  border-radius: 10px;
+}
